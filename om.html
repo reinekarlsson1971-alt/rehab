@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="sv">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="color-scheme" content="dark" />
+  <title>Om RehabGuiden</title>
+  <meta name="description" content="Neutral och professionell information om rehabilitering av leder och belastningsskador. Program, artiklar och praktiska riktlinjer." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Hoppa till innehåll</a>
+
+  <header class="topbar" role="banner">
+    <div class="container inner">
+      <a class="brand" href="index.html" aria-label="RehabGuiden – startsida">
+        <div class="brand-mark" aria-hidden="true"></div>
+        <div>
+          <strong>RehabGuiden</strong>
+          <span>leder • belastning • återgång</span>
+        </div>
+      </a>
+
+      <nav class="nav" aria-label="Huvudmeny">
+        <a data-nav href="index.html">Start</a>
+        <a data-nav href="artiklar/rehabilitering-grunder.html">Artiklar</a>
+        <a data-nav href="program/axel/index.html">Program</a>
+        <a data-nav href="om.html">Om</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="container" role="main">
+
+  <article>
+    <h1>Om, kontakt och transparens</h1>
+    <div class="meta">
+      <span class="tag">Neutralitet</span>
+      <span class="tag">Ansvarsfriskrivning</span>
+      <span class="tag">Uppdateringar</span>
+    </div>
+
+    <p>
+      RehabGuiden är en statisk informationssida med fokus på rehabilitering vid vanliga led- och belastningsbesvär.
+      Texterna är avsedda att vara ett stöd för planering och förståelse – inte en ersättning för individuell bedömning.
+      Om du arbetar kliniskt kan du använda uppläggen som “ramverk” och anpassa efter anamnes, status, mål och riskprofil.
+    </p>
+
+    <div class="callout">
+      <strong>Viktigt</strong>
+      <div>
+        Smärta kan ha många orsaker. Vid nytillkommen kraftnedsättning, domningar, feber, uttalad nattlig smärta,
+        olycka/trauma eller andra varningssignaler bör du söka vård.
+      </div>
+    </div>
+
+    <h2>Hur innehållet är tänkt att användas</h2>
+    <ul>
+      <li><strong>Program</strong> visar ett typiskt steg-för-steg-upplägg (delmål, övningar och progress).</li>
+      <li><strong>Artiklar</strong> går djupare i principer som dosering, smärthantering och återgång till idrott.</li>
+      <li><strong>Facktermer</strong> följs av korta förklaringar, så att även ovana läsare hänger med.</li>
+    </ul>
+
+    <h2>Kontakt</h2>
+    <p class="small">
+      Detta är en demo/leverans för statisk hosting (GitHub Pages / Azure Static Web Apps).
+      Om du vill koppla ett formulär eller e‑postflöde senare kan en serverless-funktion läggas till i Azure.
+    </p>
+
+    <form aria-label="Kontaktformulär (demo)">
+      <div style="display:grid; gap:10px; margin-top:10px;">
+        <div>
+          <label for="name">Namn</label>
+          <input id="name" name="name" autocomplete="name" placeholder="Ditt namn" />
+        </div>
+        <div>
+          <label for="email">E‑post</label>
+          <input id="email" name="email" type="email" autocomplete="email" placeholder="namn@exempel.se" />
+        </div>
+        <div>
+          <label for="msg">Meddelande</label>
+          <textarea id="msg" name="msg" rows="5" placeholder="Beskriv kort vad du vill ta upp."></textarea>
+        </div>
+        <button type="button" onclick="alert('Demo: formuläret är inte kopplat till server i denna statiska leverans.')">Skicka (demo)</button>
+      </div>
+    </form>
+
+    <hr class="sep" />
+
+    <h2>Definitioner</h2>
+    <p><strong>Belastningsstyrning:</strong> att anpassa volym, intensitet och frekvens så att vävnaden hinner återhämta sig och bygga kapacitet.</p>
+    <p><strong>Progression:</strong> gradvis höjning av kravnivå (t.ex. tyngre vikt, fler repetitioner, högre tempo eller mer komplex övning).</p>
+    <p><strong>Toleransfönster:</strong> den belastningsnivå du klarar utan att få en tydlig försämring i smärta/funktion de närmaste 24–48 timmarna.</p>
+  </article>
+
+  </main>
+
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div style="display:flex; flex-wrap:wrap; gap:10px; justify-content:space-between; align-items:center;">
+        <div>© 2026 RehabGuiden. Informationssida – inte medicinsk rådgivning.</div>
+        <div style="display:flex; gap:14px; flex-wrap:wrap;">
+          <a href="om.html">Kontakt & transparens</a>
+          <a href="wcag.html">Tillgänglighet</a>
+        </div>
+      </div>
+      <div class="small" style="margin-top:10px;">
+        Vid akuta besvär (t.ex. plötslig kraftnedsättning, domningar, bröstsmärta, feber eller trauma) – sök vård.
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>
