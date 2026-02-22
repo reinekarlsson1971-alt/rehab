@@ -20,31 +20,25 @@ axe<!doctype html>
   <link rel="preload" as="image" href="bilder/hero.webp" type="image/webp" />
 
   <link rel="stylesheet" href="style.css" />
+  <div id="menu-container"></div>
 </head>
 
 <body>
   <a class="skip-link" href="#main">Hoppa till innehåll</a>
 
-  <header class="topbar" role="banner">
-    <div class="container inner">
-      <a class="brand" href="index.html" aria-label="RehabGuiden – startsida">
-        <div class="brand-mark" aria-hidden="true"></div>
-        <div>
-          <strong>RehabGuiden</strong>
-          <span>leder • belastning • återgång</span>
-        </div>
-      </a>
+<header class="topbar" role="banner">
+  <div class="container inner">
+    <a class="brand" href="/index.html">
+      <div class="brand-mark"></div>
+      <div>
+        <strong>Bästa Liniment</strong>
+        <span>leder • belastning • återgång</span>
+      </div>
+    </a>
 
-      <nav class="nav" aria-label="Huvudmeny">
-        <a data-nav href="index.html">Start</a>
-        <a data-nav href="artiklar/rehabilitering-grunder.html">Artiklar</a>
-        <a data-nav href="program/axel/index.html">Program</a>
-        <a data-nav href="om.html">Om</a>
-        <a data-nav href="om.html">Linimenttest (inaktiv)</a>
-
-      </nav>
-    </div>
-  </header>
+    <div id="menu-container"></div>
+  </div>
+</header>
 
   <main id="main" class="container" role="main">
 
@@ -263,5 +257,12 @@ axe<!doctype html>
   </footer>
 
   <script src="js/main.js" defer></script>
+  <script>
+fetch("/includes/menu.html")
+  .then(response => response.text())
+  .then(data => {
+    document.getElementById("menu-container").innerHTML = data;
+  });
+</script>
 </body>
 </html>
