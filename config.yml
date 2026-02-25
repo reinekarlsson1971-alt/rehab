@@ -1,1 +1,24 @@
+# _config.yml
+
+title: "Bästa Liniment"
+description: "RehabGuiden – leder • belastning • återgång"
+
+# Din GitHub Pages-adress
+url: "https://reinekarlsson1971-alt.github.io"
+
+# Eftersom siten ligger under /rehab/
 baseurl: "/rehab"
+
+# Valfritt men bra: rätt språk
+lang: "sv-SE"
+
+# Gör så att Jekyll inte ignorerar mappar som börjar med underscore utöver standard
+# (normalt behövs inte detta, men är ofarligt)
+include: []
+
+# Standardinställningar för sidor
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: "default"
