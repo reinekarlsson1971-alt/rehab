@@ -16,9 +16,25 @@
   background:var(--accent);color:#fff;
   font-weight:800;font-size:13px;text-decoration:none;
 }
+
+/*
 .btn:hover{filter:brightness(.96);text-decoration:none;}
 .btn-ghost{background:rgba(255,255,255,.85);color:var(--text);border-color:var(--line);}
 .btn-ghost:hover{background:var(--surface2);}
+*/
+
+.btn-ghost{
+  background: rgba(255,255,255,.85);
+  color: var(--text-main);
+  border-color: var(--border);
+}
+.btn-ghost:hover{
+  background: #f1ede4; /* eller var(--bg) om du vill */
+}
+
+
+
+
 
 .pill{
   display:inline-flex;align-items:center;gap:6px;
