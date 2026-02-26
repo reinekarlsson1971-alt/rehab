@@ -1,37 +1,85 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="sv">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Artiklar om Ledhälsa</title>
-<link rel="stylesheet" href="/style.css">
-<link rel="preload" as="image" href="/Bilder/hero.webp" type="image/webp">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Artiklar – RehabGuiden</title>
+  <meta name="description" content="Fördjupande artiklar om rehabilitering, belastningsstyrning, smärta och återgång till träning." />
+  <link rel="stylesheet" href="../style.css" />
 </head>
+
 <body>
 
-<header>
-<nav>
-<a href="/index.html">Hem</a>
-<a href="/om-oss/index.html">Om Oss</a>
-<a href="/behandlingar/kna.html">Behandlingar</a>
-<a href="/artiklar/index.html">Artiklar</a>
-<a href="/kontakt/index.html">Kontakt</a>
+<header class="topbar" role="banner">
+<div class="container inner">
+<a class="brand" href="../index.html" aria-label="RehabGuiden – startsida">
+<div class="brand-mark" aria-hidden="true"></div>
+<div>
+<strong>Rehabguiden</strong>
+<span> - leder • belastning • återgång</span>
+</div>
+</a>
+
+<nav class="nav" aria-label="Huvudmeny">
+<a href="../index.html">Start</a>
+<a href="index.html">Artiklar</a>
+<a href="../program/axel/index.html">Program</a>
+<a href="../linimenttest/index.html">Linimenttest</a>
+<a href="../om.html">Om</a>
 </nav>
+</div>
 </header>
 
-<div class="container">
-<div class="card">
-<h1>Artiklar om Ledhälsa</h1>
-<picture>
-  <source srcset="/Bilder/artros.webp" type="image/webp">
-  <img src="/Bilder/artros.jpg" alt="Äldre person med artrosbesvär i händer" width="1200" height="600" loading="lazy">
-</picture>
-<p>Professionell informationssida om artiklar om ledhälsa.</p>
-</div>
-</div>
+<main class="container" role="main">
 
-<footer>
-© 2026 Rehabilitering & Ledhälsa
+<section class="section">
+  <h1>Artiklar</h1>
+  <p class="lead">
+    Fördjupande texter om rehabilitering, belastningsstyrning och återgång till aktivitet.
+  </p>
+</section>
+
+<section class="section">
+
+  <div class="grid" role="list">
+
+    <div class="card" role="listitem">
+      <h3>Rehabilitering – principer och upplägg</h3>
+      <p>Hur du strukturerar rehab med rätt belastning, progression och uppföljning.</p>
+      <a href="rehabilitering-grunder.html">
+        <span>Läs artikeln</span>
+        <span class="chev" aria-hidden="true">→</span>
+      </a>
+    </div>
+
+    <div class="card" role="listitem">
+      <h3>Smärta, inflammation och “irritation”</h3>
+      <p>Hur du tolkar smärtsignaler och avgör när belastning bör justeras.</p>
+      <a href="smarta-och-inflammation.html">
+        <span>Läs artikeln</span>
+        <span class="chev" aria-hidden="true">→</span>
+      </a>
+    </div>
+
+    <div class="card" role="listitem">
+      <h3>Återgång till träning och idrott</h3>
+      <p>Testkriterier, toleransnivåer och hur du minskar risken för återfall.</p>
+      <a href="atergang-till-traning.html">
+        <span>Läs artikeln</span>
+        <span class="chev" aria-hidden="true">→</span>
+      </a>
+    </div>
+
+  </div>
+
+</section>
+
+</main>
+
+<footer class="footer" role="contentinfo">
+  <div class="container">
+    <div>© 2026 RehabGuiden. Informationssida – inte medicinsk rådgivning.</div>
+  </div>
 </footer>
 
 </body>
