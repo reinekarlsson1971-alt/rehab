@@ -305,4 +305,12 @@ img {
   }
 
 }
+@media (min-width: 992px) {
+  .grid.products {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
 
+.product-card {
+  height: 100%;
+}
